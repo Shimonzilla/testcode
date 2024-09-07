@@ -1,24 +1,40 @@
-.psih {
-    color:chartreuse;
-    background-color: #0051ff;
-    width: 300px;
-    height: 200px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.wrapper {
+    height: 100vh;
+    display: flex;
+
+    /* Direction of the items, can be row or column */
+    flex-direction: column;
 }
-.vt4m {
-    color:azure;
-    background-color:brown;
-    display: block;
-    height: 100px;
-    /* margin:0 0 0 20px; */
-    margin-left: 20px;
-    padding: 20px;
+
+header,
+footer {
+    height: 30px;
+    background-color: rgb(69, 161, 84);
 }
-.parent {
-    display:flex;
-    background-color: grey;
-    height: 400px;
-    align-items: center;
+
+main {
+    flex: 1;
+}
+
+.container {
+padding: 10px;
+display:grid;
+grid-template-columns: auto auto auto;
+gap: 20px;
+}
+
+.card {
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.card h3 {
+    margin-top: 0px;
+}
+
+.author {
+    text-align:center;
+
 }
